@@ -15,12 +15,20 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
+    <!--Art Direction Min 960px screen-->
     <picture>
-      <source srcset="images/museum-720_x_400.png, images/museum-1440_x_360.png 2x, images/museum-2160_x_540.png 3x"
-              media="(max-width:960px)"/>
+      <source srcset="./images/museum-1920_x_1080.png"
+      media="(min-width:960px)">
+    <img id="square"
+        src="./images/museum-1920_x_1080.png" alt="placeholder">
+    <!--Art Direction Max 960px screen-->
+    <picture>
+      <source srcset="./images/museum-720_x_405.png,
+        ./images/museum-1080_x_607.png 1.5x, 
+        ./images/museum-1440_x_810.png 2x"
+      media="(max-width:960px)">
     <img id="landscape"
-        src="images/museum-720_x_400.png" alt="placeholder">
-
+        src="./images/museum-720_x_405.png" alt="placeholder">
   </header>
 </body>
 
